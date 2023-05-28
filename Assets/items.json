@@ -1,0 +1,139 @@
+{
+  "items": {
+    "mother_1": {
+      "name": "PC_Motherboard",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "mother_2": {
+      "name": "PC_Motherboard",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "power_1": {
+      "name": "PC_Power",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "power_2": {
+      "name": "PC_Power",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "cooler_1": {
+      "name": "PC_cooler_block",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "cpu_1": {
+      "name": "PC_CPU",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "ssd_1": {
+      "name": "PC_SSD",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "ssd_2": {
+      "name": "PC_SSD",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "ram_1": {
+      "name": "PC_RAM",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "ram_2": {
+      "name": "PC_RAM",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "ram_3": {
+      "name": "PC_RAM",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "ram_4": {
+      "name": "PC_RAM",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "ram_5": {
+      "name": "PC_RAM",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "ram_6": {
+      "name": "PC_RAM",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "ram_7": {
+      "name": "PC_RAM",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "ram_8": {
+      "name": "PC_RAM",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "gpu_1": {
+      "name": "PC_GPU",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "gpu_2": {
+      "name": "PC_GPU",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "gpu_3": {
+      "name": "PC_GPU",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "gpu_4": {
+      "name": "PC_GPU",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "hdd_1": {
+      "name": "PC_HDD",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "hdd_2": {
+      "name": "PC_HDD",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "cooler_plate_1": {
+      "name": "PC_Cooler_plate",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "cooler_plate_2": {
+      "name": "PC_Cooler_plate",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "cooler_fan_1": {
+      "name": "PC_Cooler_Fan",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "cooler_fan_2": {
+      "name": "PC_Cooler_Fan",
+      "is_placed": false,
+      "retries_to_place": -1
+    },
+    "cooler_fan_3": {
+      "name": "PC_Cooler_Fan",
+      "is_placed": false,
+      "retries_to_place": -1
+    }
+  }
+}
