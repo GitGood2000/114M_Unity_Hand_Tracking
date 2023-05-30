@@ -31,23 +31,33 @@ public class Items
         SaveData(jObject);
     }
 
-    public void UpdateJsonRetries(string id, int retries)
+    public void UpdateJsonInstallNum(string id, int installNum)
     {
         SetPathsJ();
         string jsonString = File.ReadAllText(path);
         JObject jObject = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonString) as JObject;
-        JToken jToken = jObject.SelectToken($"items.{id}.retries_to_place");
-        jToken.Replace(retries);
+        JToken jToken = jObject.SelectToken($"items.{id}.install_number");
+        jToken.Replace(installNum);
         SaveData(jObject);
     }
 
-    public int GetRetries(string id)
+    public int GetInstallNum(string id)
     {
         SetPathsJ();
         string jsonString = File.ReadAllText(path);
         JObject jObject = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonString) as JObject;
-        int retries=jObject["items"][id]["retries_to_place"].Value<int>();
-        return retries;
+        int installNum=jObject["items"][id]["install_number"].Value<int>();
+        return installNum;
+
+    }
+
+    public int GetRightInstallNum(string id)
+    {
+        SetPathsJ();
+        string jsonString = File.ReadAllText(path);
+        JObject jObject = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonString) as JObject;
+        int rightInstallNum=jObject["items"][id]["right_install_number"].Value<int>();
+        return rightInstallNum;
 
     }
 
