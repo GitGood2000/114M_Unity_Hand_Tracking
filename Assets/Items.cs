@@ -9,7 +9,7 @@ public class Items
 
     private string path = "";
 
-    private void SetPathsJ()
+    public void SetPathsJ()
     {
         path = "Assets" + Path.AltDirectorySeparatorChar + "items.json";
     }

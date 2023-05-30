@@ -7,6 +7,7 @@ public class GameResources : MonoBehaviour
 {
     private static GameResources _i;
 
+    public static Items items = new();
     private static bool isOk = false;
     public static GameResources i
     {
@@ -27,4 +28,19 @@ public class GameResources : MonoBehaviour
         return isOk;
     }
 
+    public static void SetPlace(string id, bool value)
+    {
+        items.UpdateJsonPlace(id, value);
+
+    }
+
+    public static bool GetPlace(string id)
+    {
+        return items.GetIsPlaced(id);
+    }
+
+    private void Start()
+    {
+        items.SetPathsJ();
+    }
 }

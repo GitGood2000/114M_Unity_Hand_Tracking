@@ -4,7 +4,7 @@
       "name": "PC_Motherboard",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":1
+      "right_install_number": 1
     },
     "mother_2": {
       "name": "PC_Motherboard",
@@ -46,7 +46,7 @@
       "name": "PC_SSD",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":8 
+      "right_install_number": 8
     },
     "ram_1": {
       "name": "PC_RAM",
@@ -70,97 +70,97 @@
       "name": "PC_RAM",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":12
+      "right_install_number": 12
     },
     "ram_5": {
       "name": "PC_RAM",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":13
+      "right_install_number": 13
     },
     "ram_6": {
       "name": "PC_RAM",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":14
+      "right_install_number": 14
     },
     "ram_7": {
       "name": "PC_RAM",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":15
+      "right_install_number": 15
     },
     "ram_8": {
       "name": "PC_RAM",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":16
+      "right_install_number": 16
     },
     "gpu_1": {
       "name": "PC_GPU",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":17
+      "right_install_number": 17
     },
     "gpu_2": {
       "name": "PC_GPU",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":18
+      "right_install_number": 18
     },
     "gpu_3": {
       "name": "PC_GPU",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":19
+      "right_install_number": 19
     },
     "gpu_4": {
       "name": "PC_GPU",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":20
+      "right_install_number": 20
     },
     "hdd_1": {
       "name": "PC_HDD",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":21
+      "right_install_number": 21
     },
     "hdd_2": {
       "name": "PC_HDD",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":22
+      "right_install_number": 22
     },
     "cooler_plate_1": {
       "name": "PC_Cooler_plate",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":23
+      "right_install_number": 23
     },
     "cooler_plate_2": {
       "name": "PC_Cooler_plate",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":24
+      "right_install_number": 24
     },
     "cooler_fan_1": {
       "name": "PC_Cooler_Fan",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":25
+      "right_install_number": 25
     },
     "cooler_fan_2": {
       "name": "PC_Cooler_Fan",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":26
+      "right_install_number": 26
     },
     "cooler_fan_3": {
       "name": "PC_Cooler_Fan",
       "is_placed": false,
       "install_number": -1,
-      "right_install_number":27
+      "right_install_number": 27
     }
   }
 }
