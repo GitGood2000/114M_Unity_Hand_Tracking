@@ -9,6 +9,7 @@ public class XRSocketInteractorWithStatCheck : XRSocketInteractor
     private string linkId;
     public bool isEntered = false;
     private XRBaseInteractable interactable;
+    public Items items;
     void Start()
     {
         linkId = this.GetComponent<Stats>().linkId;
@@ -39,7 +40,7 @@ public class XRSocketInteractorWithStatCheck : XRSocketInteractor
         isEntered = true;
         interactable = (XRBaseInteractable)arg0.interactableObject;
         GameResources.SetOk(MatchLinkId(interactable));
-        GameResources.SetPlace(interactable.GetComponent<Stats>().linkId, true);
+        items.UpdateJsonPlace(interactable.GetComponent<Stats>().linkId, true);
         //ChangeActivityOfChildrens(true);
     }
 
@@ -48,7 +49,7 @@ public class XRSocketInteractorWithStatCheck : XRSocketInteractor
         if (!isEntered) { return; }
         isEntered = false;
         interactable = (XRBaseInteractable)arg0.interactableObject;
-        GameResources.SetPlace(interactable.GetComponent<Stats>().linkId, false);
+        items.UpdateJsonPlace(interactable.GetComponent<Stats>().linkId, false);
         //ChangeActivityOfChildrens(false);
     }
 
@@ -69,6 +70,6 @@ public class XRSocketInteractorWithStatCheck : XRSocketInteractor
         {
             return true;
         }
-        return GameResources.GetPlace(parent_id);
+        return items.GetIsPlaced(parent_id);
     }
 }

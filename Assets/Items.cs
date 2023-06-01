@@ -1,30 +1,30 @@
 using System.Diagnostics;
 using System.IO;
 using UnityEngine;
+using UnityEditor;
 using Newtonsoft.Json.Linq;
 
 
-public class Items
+public class Items : MonoBehaviour
 {
 
-    private string path = "";
+    private string JSONString;
 
-    public void SetPathsJ()
+    private void Awake()
     {
-        path = "Assets" + Path.AltDirectorySeparatorChar + "items.json";
-    }
+        JSONString = GameResources.i.JSONFile.text;
 
+    }
     private void SaveData(JObject jObject)
     {
         string updatedJsonString = jObject.ToString();
-        File.WriteAllText(path, updatedJsonString);
+        JSONString = updatedJsonString;
     }
 
 
     public void UpdateJsonPlace(string id, bool is_placed)
     {
-        SetPathsJ();
-        string jsonString = File.ReadAllText(path);
+        string jsonString = JSONString;
         JObject jObject = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonString) as JObject;
         JToken jToken = jObject.SelectToken($"items.{id}.is_placed");
         jToken.Replace(is_placed);
@@ -33,8 +33,7 @@ public class Items
 
     public void UpdateJsonInstallNum(string id, int installNum)
     {
-        SetPathsJ();
-        string jsonString = File.ReadAllText(path);
+        string jsonString = JSONString;
         JObject jObject = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonString) as JObject;
         JToken jToken = jObject.SelectToken($"items.{id}.install_number");
         jToken.Replace(installNum);
@@ -43,8 +42,7 @@ public class Items
 
     public int GetInstallNum(string id)
     {
-        SetPathsJ();
-        string jsonString = File.ReadAllText(path);
+        string jsonString = JSONString;
         JObject jObject = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonString) as JObject;
         int installNum=jObject["items"][id]["install_number"].Value<int>();
         return installNum;
@@ -53,8 +51,7 @@ public class Items
 
     public int GetRightInstallNum(string id)
     {
-        SetPathsJ();
-        string jsonString = File.ReadAllText(path);
+        string jsonString = JSONString;
         JObject jObject = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonString) as JObject;
         int rightInstallNum=jObject["items"][id]["right_install_number"].Value<int>();
         return rightInstallNum;
@@ -63,8 +60,7 @@ public class Items
 
     public bool GetIsPlaced(string id)
     {
-        SetPathsJ();
-        string jsonString = File.ReadAllText(path);
+        string jsonString = JSONString;
         JObject jObject = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonString) as JObject;
         bool place=jObject["items"][id]["is_placed"].Value<bool>();
         return place;
@@ -72,8 +68,7 @@ public class Items
     
     public string GetName(string id)
     {
-        SetPathsJ();
-        string jsonString = File.ReadAllText(path);
+        string jsonString = JSONString;
         JObject jObject = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonString) as JObject;
         string name=jObject["items"][id]["name"].Value<string>();
         return name;

@@ -7,7 +7,8 @@ public class GameResources : MonoBehaviour
 {
     private static GameResources _i;
 
-    public static Items items = new();
+    public TextAsset JSONFile;
+
     private static bool isOk = false;
     public static GameResources i
     {
@@ -17,7 +18,6 @@ public class GameResources : MonoBehaviour
             return _i;
         }
     }
-
     public static void SetOk(bool set)
     {
         isOk = set;
@@ -26,21 +26,5 @@ public class GameResources : MonoBehaviour
     public static bool GetOk()
     {
         return isOk;
-    }
-
-    public static void SetPlace(string id, bool value)
-    {
-        items.UpdateJsonPlace(id, value);
-
-    }
-
-    public static bool GetPlace(string id)
-    {
-        return items.GetIsPlaced(id);
-    }
-
-    private void Start()
-    {
-        items.SetPathsJ();
     }
 }
